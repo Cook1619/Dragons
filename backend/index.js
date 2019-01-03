@@ -1,5 +1,6 @@
 // const Dragon = require('./dragon.js');
-const Generation =  require("./generation");
+const GenerationEngine =  require("./engine");
+// const Generation =  require("./generation");
 // const fooey = new Dragon({
 //     birthdate: new Date(),
 //     nickname: 'fooey'
@@ -23,10 +24,18 @@ const Generation =  require("./generation");
 // console.log('fooey', fooey);
 // console.log('baloo', baloo);
 // console.log('mimar', mimar);
-const generation =  new Generation();
+// const generation =  new Generation();
 
-console.log('GENERATION', generation);
+// console.log('GENERATION', generation);
 
-const gooby =  generation.newDragon();
+// const gooby =  generation.newDragon();
 
-console.log('gooby', gooby)
+// console.log('gooby', gooby)
+
+const engine =  new GenerationEngine();
+
+engine.start();
+
+setTimeout(() => {
+    engine.stop();
+}, 20000);
