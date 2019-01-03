@@ -19,8 +19,10 @@ const DEFAULT_PROPERTIES = {
                 //gets a random value from the json file using the length 
                 Math.floor(Math.random() * traitValues.length)
             ];
+            //Put the random values grabs onto the empty array
             traits.push({traitType, traitValue});
         });
+        //return the array
         return traits;
     }
 }
