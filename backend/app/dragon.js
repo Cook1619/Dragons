@@ -1,4 +1,4 @@
-const TRAITS = require("./traits");
+const TRAITS = require("../data/traits");
 //The set default properties
 const DEFAULT_PROPERTIES = {
     nickname: 'unnamed',
