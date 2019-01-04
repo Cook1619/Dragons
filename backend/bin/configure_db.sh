@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export PGPASSWORD= 'packers';
+
 echo "Configuring dragonstachdb"
 
 dropdb -U node_user dragonstackdb
